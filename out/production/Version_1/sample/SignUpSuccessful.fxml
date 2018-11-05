@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpSuccessful">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="640.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="WelcomeUser" layoutX="106.0" layoutY="62.0" text="You have signed up successfully" textFill="#514b4b">
+         <font>
+            <Font name="Bodoni MT" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="ExitButton" layoutX="546.0" layoutY="411.0" mnemonicParsing="false" onAction="#exitAction" text="EXIT" textFill="#464444">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="284.0" layoutY="287.0" mnemonicParsing="false" onAction="#EnterAction" text="Enter">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="41.0" layoutY="409.0" mnemonicParsing="false" onAction="#LogOutAction" prefHeight="39.0" prefWidth="79.0" text="LOG OUT">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="197.0" layoutY="136.0" text="Are you a teacher or student?">
+         <font>
+            <Font name="Bell MT" size="22.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="teacher" layoutX="202.0" layoutY="201.0" mnemonicParsing="false" text="Teacher">
+         <toggleGroup>
+            <ToggleGroup fx:id="Catagory" />
+         </toggleGroup>
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="student" layoutX="357.0" layoutY="201.0" mnemonicParsing="false" text="Student" toggleGroup="$Catagory">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </RadioButton>
+   </children>
+</Pane>
